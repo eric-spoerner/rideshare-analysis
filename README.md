@@ -17,6 +17,8 @@ Part of a larger initiative to analyze ridesharing data by city type.  Cities ar
 
 ## The Data
 
+Rides from January through early May of 2019.
+
 * city data `city_data.csv`
     * Columns:
         * city
@@ -40,8 +42,13 @@ Numer of rides per city type is wildly disparate with considerably larger volume
 This is a consistent pattern across cities.  Number of rural drivers are far below even number of suburban drivers.
 ![Figure 2 -- Number of rides by city per city type](Analysis/Fig2.png)
 
-Look at this!
+Look at this.
+
 ![Figure 1 -- bubbles.](Analysis/Fig1.png)
+
+## Challenges
+
+Chart transparency.  facecolor='white', transparent=False, bbox_inches="tight"
 
 ## Recommendations
 
