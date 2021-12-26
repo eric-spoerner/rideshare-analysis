@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This repository contains multiple scripts designed for the analysis of ridesharing data.  
+This repository contains multiple scripts designed for the analysis of ridesharing business data.  
 
-The intent of the analysis is to segment ridesharing data by city type, using ride data from the first third of the year 2019.  Each city is categorized as either Urban, Suburban, or Rural based on the size of the city, and each city's full set of logged rides for those four months are aggregated in order to determine metrics and suggest potential business policy changes for the company.
+The intent of the analysis is to segment data by city type, using ride data from the first third of the year 2019.  Each city is categorized as either Urban, Suburban, or Rural based on the size of the city, and each city's full set of logged rides for those four months are aggregated in order to determine metrics and suggest potential business policy changes for the company.
 
 ## Resources
 * Anaconda3 (2021.11)
@@ -39,7 +39,10 @@ The intent of the analysis is to segment ridesharing data by city type, using ri
 
 ## The Code
 
-* `Pyber.ipynb` -- Contains large amount of initial exploratory data analysis after file was loaded.  Summary statistics / centality analysis.  Box and whisker plots for driver count, ride count, and fare (Figs 2-4).  Built bubble scatterplot for ridesharing volume (see Fig 1 below).  Pie charts for total city type volume (Figs 5-7).
+* `Pyber.ipynb` -- Contains majority of initial exploratory data analysis, including:
+    * Summary statistics, including box and whisker plots for driver count, ride count, and fare (Figs 2-4).  
+    * Built bubble scatterplot for ridesharing volume (see Fig 1 below).  
+    * Pie charts for total city type volume (Figs 5-7).
 
 * `Pyber_challenge.ipynb` -- Contains total fare by city type time-series line chart and DataFrame displayed below (Figs 8-9).
 
@@ -81,15 +84,16 @@ Chart transparency was a challenge due to the borders of each generated chart im
 * *Hire more drivers in rural areas.*  Average wages per driver per rural city are highly variable, but on average higher than other city types.  Consider promoting this fact in advertising campaigns targeted to potential rural drivers.
 
 * *Further analysis of disparate causes/patterns among rural rides.*
+
     * What is the cause of the higher variability in average fare per city in rural areas?  Root cause identification may help better understand rural city market.
     * Are the typical rides *inter*city rides or *intra*city rides?  Analyzing location data for start and end of the ride would help further contextualize disparities between urban and rural modes.
     * Consider this a different sort of marketing campaign for individual riders.  Ridesharing is often perceived as an option for short trips specifically, but in low-density areas can provide a vital intercity transit option.
 
 * *Consider supply/demand curve in urban areas.*  Driver volume is significantly higher in urban areas, resulting in lower fares on average for each individual driver.  Does this impact overall wages per driver?  Does this impact rider experience?
 
-* *Additional data harvesting* -- Pursue other data opportunities to further understand market dynamics, and attempt to answer the following questions:
+* *Additional data harvesting.*  Pursue other data opportunities to further understand market dynamics, and attempt to answer the following questions:
     * How long is each trip, both in distance and time?
     * How many rides per day/week are being performed per driver?
     * How does the number of drivers change over time?  How is this impacted by the fares they receive?
-    * Per capita population analysis -- Integrate other information about specific cities to understand if there are too many/few drivers.
+    * Per capita population analysis: How does the amoutn of drivers per person in a given city affect fares and ride frequency?
     * How does ride frequency and fare size change with availability of other with availability of other transit options in a given city?
