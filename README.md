@@ -93,5 +93,5 @@ Chart image generation was a challenge due to the borders of each generated char
     * How long is each trip, both in distance and time?
     * How many rides per day/week are being performed per driver?
     * How does the number of drivers change over time?  How is this impacted by the fares they receive?
-    * Per capita population analysis: How does the amoutn of drivers per person in a given city affect fares and ride frequency?
+    * Per capita population analysis: How does the amount of drivers per person in a given city affect fares and ride frequency?
     * How does ride frequency and fare size change with availability of other transit options in a given city?
